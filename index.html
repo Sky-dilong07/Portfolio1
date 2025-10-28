@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saurabh Mishra — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <div class="container nav">
+      <div class="brand"><a href="#home">Saurabh Mishra</a></div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="mobile-toggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text" data-animate>
+          <h1>Hi, I'm <span>Saurabh Mishra</span></h1>
+          <p class="subtitle">Java Backend Developer — Spring Boot • REST APIs • MySQL</p>
+          <p class="lead">Building scalable backend services, clean REST APIs and resilient systems.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn outline" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-card" data-animate>
+          <!-- replace with your portrait or illustration -->
+          <img src="assets/hero-bg.png" alt="developer illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container" data-animate>
+        <h2>About</h2>
+        <p>I’m an MCA student focused on backend development with Java and Spring Boot. I build RESTful APIs, design relational schemas, and write maintainable server-side code. I enjoy solving problems with clean architecture.</p>
+        <div class="quick-stats">
+          <span><strong>Education:</strong> MCA — Pranveer Singh Institute of Technology</span>
+          <span><strong>Location:</strong> Chandauli, Uttar Pradesh</span>
+          <span><strong>Availability:</strong> Open to fresher roles</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container" data-animate>
+        <h2>Projects</h2>
+
+        <div class="project-tabs" role="tablist" aria-label="Project categories">
+          <button class="tab active" data-tab="api">REST API</button>
+          <button class="tab" data-tab="crud">CRUD</button>
+          <button class="tab" data-tab="fullstack">Full Stack</button>
+          <button class="tab" data-tab="upcoming">Upcoming</button>
+        </div>
+
+        <div class="project-grid-wrap">
+          <!-- API -->
+          <div class="project-content active" id="api">
+            <article class="project-card" data-category="api">
+              <img src="assets/weather-app.png" alt="Weather App screenshot">
+              <div class="project-body">
+                <h3>Weather App (Spring Boot)</h3>
+                <p>Spring Boot API to fetch and serve weather data. Uses REST endpoints to provide forecasts and city-based queries.</p>
+                <div class="project-links">
+                  <a class="btn small" href="https://github.com/Sky-dilong07/Weather-App-Java-SpringBoot" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+                  <a class="btn small outline" href="https://github.com/Sky-dilong07/Weather-App-Java-SpringBoot" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="api">
+              <img src="assets/Joke-Generator.png" alt="Joke Generator screenshot">
+              <div class="project-body">
+                <h3>JokeGenerator (API)</h3>
+                <p>Lightweight API service that returns jokes; demonstrates REST endpoints, JSON responses, and error handling.</p>
+                <div class="project-links">
+                  <a class="btn small" href="https://github.com/Sky-dilong07/jokegenerator" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+                  <a class="btn small outline" href="https://github.com/Sky-dilong07/jokegenerator" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- CRUD -->
+          <div class="project-content" id="crud">
+            <article class="project-card" data-category="crud">
+              <img src="assets/Student -Management.png" alt="Student Management screenshot">
+              <div class="project-body">
+                <h3>Student Management (CRUD)</h3>
+                <p>CRUD operations for student records using Java and a persistent database — add, edit, delete, and list students.</p>
+                <div class="project-links">
+                  <a class="btn small" href="https://github.com/Sky-dilong07/studentmanagement" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+                  <a class="btn small outline" href="https://github.com/Sky-dilong07/studentmanagement" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="crud">
+              <img src="assets/screenshots/library-management-system.png" alt="Library Management screenshot">
+              <div class="project-body">
+                <h3>Library Management System (CRUD)</h3>
+                <p>A complete library CRUD system using Java and MySQL — manages books, members, and transactions.</p>
+                <div class="project-links">
+                  <a class="btn small" href="https://github.com/Sky-dilong07/library-management-system" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+                  <a class="btn small outline" href="https://github.com/Sky-dilong07/library-management-system" target="_blank" rel="noopener noreferrer">Live Preview</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Full Stack (empty for now) -->
+          <div class="project-content" id="fullstack">
+            <article class="project-card" data-category="fullstack">
+              <img src="assets/screenshots/coming-soon.png" alt="Fullstack coming soon">
+              <div class="project-body">
+                <h3>Full Stack Projects</h3>
+                <p>Full stack projects will appear here — backend (Spring Boot) + frontend dashboards. I'll add full-stack repos when ready.</p>
+                <div class="project-links">
+                  <span class="coming-soon">Coming Soon</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Upcoming -->
+          <div class="project-content" id="upcoming">
+            <article class="project-card upcoming" data-category="upcoming">
+              <img src="assets/screenshots/coming-soon.png" alt="Coming soon screenshot">
+              <div class="project-body">
+                <h3>Portfolio (React) — Upcoming</h3>
+                <p>Re-implementing this portfolio as a React app with dynamic repo listing and project modals.</p>
+                <div class="project-links">
+                  <span class="coming-soon">Coming Soon 🚀</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container" data-animate>
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Email: <a href="mailto:saurabhmishra12mgs@gmail.com">saurabhmishra12mgs@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/saurabh-mishra-9a5875253/" target="_blank" rel="noopener noreferrer">Saurabh Mishra</a></p>
+            <p>GitHub: <a href="https://github.com/Sky-dilong07" target="_blank" rel="noopener noreferrer">Sky-dilong07</a></p>
+          </div>
+
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <label><span>Name</span><input name="name" required></label>
+            <label><span>Email</span><input name="email" type="email" required></label>
+            <label><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Saurabh Mishra • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
